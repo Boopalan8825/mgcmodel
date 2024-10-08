@@ -1,0 +1,618 @@
+###
+GET http://localhost:4004/v2/mgcdb-srv/Job
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiL042anJLU1d5QjAzZ0RzWnRCRDV4VmJuZUpBWDFaa00vMnJtbGRzQ2ZvST0ifQ.eyJqdGkiOiJjM2FiMDIxNzExNzU0NDc3YWViN2U5Yzc3ZGMzMGUwOSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDEwNzg1MiwiZXhwIjoxNzA0MTExNDUyLCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.ofBkmgRdqOdLnpswfgAp4ST7FX_nLTC0BpGV0JB_tmVv1KyqdOe40o7yr-bEdZ_7LqSK8S3kpfE1RB03fJmJsJbhYiS1I6_uwupf0EbLBvvGHfWwQWdc5pB9eUjwCfsdaHCz02CbqANY2tow2vJh6ucxklcVHHP5vv_zOBEtCk6e8mUp7os2ZOuuTa5N1UuFh7GrPLydWAG3Pm9baPxTuq4qIjoEapIobyNjp2Bl4PG5DjGKlt0Bq_VhbGvIk2Wzo0GzynIPwyEP0oac97OKnIcvTudXuf0ADWUaUlofrtOv2YSOoTctd1rzd5tZ4kZN2HnwjHxXFQbq_nAMqsC8rQ
+
+###
+GET http://localhost:4004/v2/mgcdb-srv/WbsElement?$filter=ID eq '1.2220060002.01.3100'
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiL042anJLU1d5QjAzZ0RzWnRCRDV4VmJuZUpBWDFaa00vMnJtbGRzQ2ZvST0ifQ.eyJqdGkiOiJjM2FiMDIxNzExNzU0NDc3YWViN2U5Yzc3ZGMzMGUwOSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDEwNzg1MiwiZXhwIjoxNzA0MTExNDUyLCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.ofBkmgRdqOdLnpswfgAp4ST7FX_nLTC0BpGV0JB_tmVv1KyqdOe40o7yr-bEdZ_7LqSK8S3kpfE1RB03fJmJsJbhYiS1I6_uwupf0EbLBvvGHfWwQWdc5pB9eUjwCfsdaHCz02CbqANY2tow2vJh6ucxklcVHHP5vv_zOBEtCk6e8mUp7os2ZOuuTa5N1UuFh7GrPLydWAG3Pm9baPxTuq4qIjoEapIobyNjp2Bl4PG5DjGKlt0Bq_VhbGvIk2Wzo0GzynIPwyEP0oac97OKnIcvTudXuf0ADWUaUlofrtOv2YSOoTctd1rzd5tZ4kZN2HnwjHxXFQbq_nAMqsC8rQ
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='CP_CREW',ID=e5e850be-4558-4c82-948d-a4ffd420c7d3,Date='2024-01-06')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiL042anJLU1d5QjAzZ0RzWnRCRDV4VmJuZUpBWDFaa00vMnJtbGRzQ2ZvST0ifQ.eyJqdGkiOiJjM2FiMDIxNzExNzU0NDc3YWViN2U5Yzc3ZGMzMGUwOSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDEwNzg1MiwiZXhwIjoxNzA0MTExNDUyLCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.ofBkmgRdqOdLnpswfgAp4ST7FX_nLTC0BpGV0JB_tmVv1KyqdOe40o7yr-bEdZ_7LqSK8S3kpfE1RB03fJmJsJbhYiS1I6_uwupf0EbLBvvGHfWwQWdc5pB9eUjwCfsdaHCz02CbqANY2tow2vJh6ucxklcVHHP5vv_zOBEtCk6e8mUp7os2ZOuuTa5N1UuFh7GrPLydWAG3Pm9baPxTuq4qIjoEapIobyNjp2Bl4PG5DjGKlt0Bq_VhbGvIk2Wzo0GzynIPwyEP0oac97OKnIcvTudXuf0ADWUaUlofrtOv2YSOoTctd1rzd5tZ4kZN2HnwjHxXFQbq_nAMqsC8rQ
+
+{
+            "AppName": "CP_CREW",
+            "ID": "1a323861-abca-4335-b3a0-4b18211cae2d",
+            "EquipmentID": "",
+            "EquipmentDescription": "",
+            "EmployeeID": "9083619",
+            "EmployeeName": "Bill Booker",
+            "Date": "2024-01-06",
+            "PayCode": "",
+            "Job": "",
+            "JobDescription": "",
+            "Section": "",
+            "SectionDescription": "",
+            "Phase": "",
+            "PhaseDescription": "",
+            "Qty": "",
+            "UOM": "",
+            "WorkOrder": "100000051-0010",
+            "WorkorderDescription": "100000051-Created at 3:06PM",
+            "CostCenter": "",
+            "Activity": "",
+            "SendingUnitTrailer": "",
+            "ReceivingUnitTruck": "",
+            "Comments": "",
+            "TotalHours": "2",
+            "SaveSubmitStatus": "Saved",
+            "PayPeriodBeginDate": "2023-12-31",
+            "PayPeriodEndDate": "2024-01-13",
+            "PersonnelSubArea": "23002340",
+            "PositionManagerName": "",
+            "PositionManagerEmail": "",
+            "ProjectManagerName": "",
+            "ProjectManagerEmail": "",
+            "ManagerApprovalName": "",
+            "ManagerApprovalEmail": "",
+            "CompanyID": "2006",
+            "CompanyName": "NRB Construction Company Limited",
+            "OtThreshold": "10",
+            "SequenceNo": "1,3",
+            "ForemanID": "9082658",
+            "TotalHoursPercentage" : "2"
+        }
+
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='DD',ID=c5ceb9f5-c27d-48b9-9647-5bbfe029205b,Date='2024-01-03')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+            "Date": "2024-01-04",
+            "ID" : "12823c1c-c96f-4325-aa6c-17bee1cdb1fe",
+            "EmployeeID": "9080024",
+            "EmployeeName": "Wallace Currie",
+            "CompanyID": "2006",
+            "Activity": "",
+            "ReceivingUnitTruck": "",
+            "SendingUnitTrailer": "",
+            "JobDescription": "",
+            "SectionDescription": "",
+            "PhaseDescription": "",
+            "CostCenter": "2000005006",
+            "WorkOrder": "",
+            "WorkorderDescription": "",
+            "Position": "Truck Driver",
+            "PositionManagerName": "James Test",
+            "PositionManagerEmail": "jmyshrall@dexter.ca",
+            "ProjectManagerName": "",
+            "ProjectManagerEmail": "",
+            "PersonnelSubArea": "23002345",
+            "PayCode": "",
+            "TotalHours": "24",
+            "Comments": "",
+            "SaveSubmitStatus": "Saved",
+            "PayPeriodBeginDate": "2023-12-31",
+            "PayPeriodEndDate": "2024-12-13",
+            "ManagerApprovalEmail": "jmyshrall@dexter.ca",
+            "OtThreshold": "110",
+            "SequenceNo": "0",
+            "AppName": "DD",
+            "Job": "",
+            "Section": "",
+            "Phase": "",  
+            "TotalHoursPercentage" : "24",
+            "DELETED" : false
+        }
+
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='DD',ID=34ec3e84-dfcf-487a-8d5c-2e9555b08921,Date='2024-01-04')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+            "Date": "2024-01-04",
+            "ID" : "34ec3e84-dfcf-487a-8d5c-2e9555b08921",
+            "EmployeeID": "9080024",
+            "EmployeeName": "Wallace Currie",
+            "CompanyID": "2006",
+            "Activity": "",
+            "ReceivingUnitTruck": "",
+            "SendingUnitTrailer": "",
+            "JobDescription": "",
+            "SectionDescription": "",
+            "PhaseDescription": "",
+            "CostCenter": "2000005006",
+            "WorkOrder": "",
+            "WorkorderDescription": "",
+            "Position": "Truck Driver",
+            "PositionManagerName": "James Test",
+            "PositionManagerEmail": "jmyshrall@dexter.ca",
+            "ProjectManagerName": "",
+            "ProjectManagerEmail": "",
+            "PersonnelSubArea": "23002345",
+            "PayCode": "",
+            "TotalHours": "21",
+            "Comments": "",
+            "SaveSubmitStatus": "Awaiting approval",
+            "PayPeriodBeginDate": "2023-12-31",
+            "PayPeriodEndDate": "2024-12-13",
+            "ManagerApprovalEmail": "jmyshrall@dexter.ca",
+            "OtThreshold": "110",
+            "SequenceNo": "0",
+            "AppName": "DD",
+            "Job": "",
+            "Section": "",
+            "Phase": "",  
+            "TotalHoursPercentage" : "21",
+            "DELETED" : false
+        }
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='DD',ID=620feba3-4359-4151-b899-a02f0ee0329e,Date='2024-01-04')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+        "ID": "620feba3-4359-4151-b899-a02f0ee0329e",
+        "Date": "2024-01-04",
+        "EmployeeID": "9080024",
+        "EmployeeName": "Wallace Currie",
+        "CompanyID": "2006",
+        "Activity": "",
+        "ReceivingUnitTruck": "",
+        "SendingUnitTrailer": "",
+        "JobDescription": "",
+        "SectionDescription": "",
+        "PhaseDescription": "",
+        "CostCenter": "2000005006",
+        "WorkOrder": "",
+        "WorkorderDescription": "",
+        "Position": "Truck Driver",
+        "PositionManagerName": "James Test",
+        "PositionManagerEmail": "jmyshrall@dexter.ca",
+        "ProjectManagerName": "",
+        "ProjectManagerEmail": "",
+        "PersonnelSubArea": "23002345",
+        "PayCode": "1030",
+        "TotalHours": "9",
+        "Comments": "",
+        "SaveSubmitStatus": "Saved",
+        "PayPeriodBeginDate": "2023-12-31",
+        "PayPeriodEndDate": "2024-12-13",
+        "ManagerApprovalEmail": "jmyshrall@dexter.ca",
+        "OtThreshold": "110",
+        "SequenceNo": "0",
+        "AppName": "DD",
+        "Job": "",
+        "Section": "",
+        "Phase": ""
+    }
+    
+
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='DD',ID=6622d833-e0fd-4e95-b6be-405ec58c9960,Date='2024-01-03')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+        "ID": "6622d833-e0fd-4e95-b6be-405ec58c9960",
+        "Date": "2024-01-03",
+        "EmployeeID": "9080024",
+        "EmployeeName": "Wallace Currie",
+        "CompanyID": "2006",
+        "Activity": "",
+        "ReceivingUnitTruck": "",
+        "SendingUnitTrailer": "",
+        "JobDescription": "",
+        "SectionDescription": "",
+        "PhaseDescription": "",
+        "CostCenter": "2000007006",
+        "WorkOrder": "",
+        "WorkorderDescription": "",
+        "Position": "Truck Driver",
+        "PositionManagerName": "James Test",
+        "PositionManagerEmail": "jmyshrall@dexter.ca",
+        "ProjectManagerName": "",
+        "ProjectManagerEmail": "",
+        "PersonnelSubArea": "23002345",
+        "PayCode": "",
+        "TotalHours": "9",
+        "Comments": "",
+        "SaveSubmitStatus": "Saved",
+        "PayPeriodBeginDate": "2023-12-31",
+        "PayPeriodEndDate": "2024-12-13",
+        "ManagerApprovalEmail": "jmyshrall@dexter.ca",
+        "OtThreshold": "110",
+        "SequenceNo": "3",
+        "AppName": "DD",
+        "Job": "",
+        "Section": "",
+        "Phase": ""
+      }
+
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='CP_CREW',ID=39599939-e1d1-4e53-82c3-7ac1bce81824,Date='2024-01-09')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+    "AppName": "CP_CREW",
+    "ID": "39599939-e1d1-4e53-82c3-7ac1bce81824",
+    "EquipmentID": "",
+    "EquipmentDescription": "",
+    "EmployeeID": "9082627",
+    "EmployeeName": "Adam Brien",
+    "LocationCode": "4103",
+    "Date": "2024-01-09",
+    "PayCode": "",
+    "Job": "",
+    "JobDescription": "",
+    "ProfitCenter": "",
+    "Section": "",
+    "SectionDescription": "",
+    "Phase": "",
+    "PhaseDescription": "",
+    "Qty": "",
+    "UOM": "",
+    "WorkOrder": "",
+    "WorkorderDescription": "",
+    "CostCenter": "",
+    "Activity": "",
+    "SendingUnitTrailer": "",
+    "ReceivingUnitTruck": "10000006",
+    "Comments": "",
+    "TotalHours": "03.00",
+    "SaveSubmitStatus": "Saved",
+    "PayPeriodBeginDate": "2023-12-31",
+    "PayPeriodEndDate": "2024-01-13",
+    "PersonnelSubArea": "23002380",
+    "PositionManagerName": "",
+    "PositionManagerEmail": "",
+    "ProjectManagerName": "",
+    "ProjectManagerEmail": "",
+    "ManagerApprovalName": "",
+    "ManagerApprovalEmail": "",
+    "CompanyID": "2006",
+    "CompanyName": "NRB Construction Company Limited",
+    "OtThreshold": "110",
+    "SequenceNo": "2,2",
+    "ForemanID": "9082658",
+    "DELETED": true
+}
+
+###
+POST http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+        "Date": "2024-01-03",
+        "EmployeeID": "9080024",
+        "EmployeeName": "Wallace Currie",
+        "CompanyID": "2006",
+        "Activity": "",
+        "ReceivingUnitTruck": "",
+        "SendingUnitTrailer": "",
+        "JobDescription": "",
+        "SectionDescription": "",
+        "PhaseDescription": "",
+        "CostCenter": "2000007006",
+        "WorkOrder": "",
+        "WorkorderDescription": "",
+        "Position": "Truck Driver",
+        "PositionManagerName": "James Test",
+        "PositionManagerEmail": "jmyshrall@dexter.ca",
+        "ProjectManagerName": "",
+        "ProjectManagerEmail": "",
+        "PersonnelSubArea": "23002345",
+        "PayCode": "",
+        "TotalHours": "10.00",
+        "Comments": "",
+        "SaveSubmitStatus": "Saved",
+        "PayPeriodBeginDate": "2023-12-31",
+        "PayPeriodEndDate": "2024-12-13",
+        "ManagerApprovalEmail": "jmyshrall@dexter.ca",
+        "OtThreshold": "110",
+        "SequenceNo": "2",
+        "AppName": "TEST",
+        "Job": "",
+        "Section": "",
+        "Phase": ""
+      }
+
+###
+POST http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+        "Date": "2024-01-03",
+        "EmployeeID": "9080024",
+        "EmployeeName": "Wallace Currie",
+        "CompanyID": "2006",
+        "CostCenter": "2000007006",
+        "Position": "Truck Driver",
+        "PositionManagerName": "James Test",
+        "PositionManagerEmail": "jmyshrall@dexter.ca",
+        "PersonnelSubArea": "23002345",
+        "TotalHours": "10.00",
+        "SaveSubmitStatus": "Saved",
+        "PayPeriodBeginDate": "2023-12-31",
+        "PayPeriodEndDate": "2024-12-13",
+        "OtThreshold": "110",
+        "SequenceNo": "2",
+        "AppName": "TEST"
+      }
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='CP_CREW',ID=c667215c-6861-4f8d-8817-97d857a15e1a,Date='2024-01-03')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+    "AppName": "CP_CREW",
+    "ID": "c667215c-6861-4f8d-8817-97d857a15e1a",
+    "EquipmentID": "",
+    "EquipmentDescription": "",
+    "EmployeeID": "9082627",
+    "EmployeeName": "Ahmed Gadalla",
+    "LocationCode": "4054",
+    "Date": "2024-01-03",
+    "PayCode": "",
+    "Job": "",
+    "JobDescription": "",
+    "ProfitCenter": "",
+    "Section": "",
+    "SectionDescription": "",
+    "Phase": "",
+    "PhaseDescription": "",
+    "Qty": "",
+    "UOM": "",
+    "WorkOrder": "",
+    "WorkorderDescription": "",
+    "CostCenter": "2000005006",
+    "Activity": "",
+    "SendingUnitTrailer": "",
+    "ReceivingUnitTruck": "",
+    "Comments": "",
+    "TotalHours": "05.00",
+    "SaveSubmitStatus": "Saved",
+    "PayPeriodBeginDate": "2023-12-31",
+    "PayPeriodEndDate": "2024-01-13",
+    "PersonnelSubArea": "22002220",
+    "PositionManagerName": "",
+    "PositionManagerEmail": "",
+    "ProjectManagerName": "",
+    "ProjectManagerEmail": "",
+    "ManagerApprovalName": "",
+    "ManagerApprovalEmail": "",
+    "CompanyID": "2002",
+    "CompanyName": "General Liquids Canada Ltd.",
+    "OtThreshold": "110",
+    "SequenceNo": "",
+    "ForemanID": "9082658",
+    "DELETED": true,
+    "OtFrequency" : "Weekly"
+}
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='CP_CREW',ID=d8e97b03-ac73-44c7-ac88-59b0efcf801b,Date='2024-01-07')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+    "AppName": "CP_CREW",
+    "ID": "d8e97b03-ac73-44c7-ac88-59b0efcf801b",
+    "EquipmentID": "",
+    "EquipmentDescription": "",
+    "EmployeeID": "9082627",
+    "EmployeeName": "Ahmed Gadalla",
+    "LocationCode": "4054",
+    "Date": "2024-01-07",
+    "PayCode": "",
+    "Job": "",
+    "JobDescription": "",
+    "ProfitCenter": "",
+    "Section": "",
+    "SectionDescription": "",
+    "Phase": "",
+    "PhaseDescription": "",
+    "Qty": "",
+    "UOM": "",
+    "WorkOrder": "",
+    "WorkorderDescription": "",
+    "CostCenter": "2000005006",
+    "Activity": "",
+    "SendingUnitTrailer": "",
+    "ReceivingUnitTruck": "",
+    "Comments": "",
+    "TotalHours": "03.00",
+    "SaveSubmitStatus": "Saved",
+    "PayPeriodBeginDate": "2023-12-31",
+    "PayPeriodEndDate": "2024-01-13",
+    "PersonnelSubArea": "22002220",
+    "PositionManagerName": "",
+    "PositionManagerEmail": "",
+    "ProjectManagerName": "",
+    "ProjectManagerEmail": "",
+    "ManagerApprovalName": "",
+    "ManagerApprovalEmail": "",
+    "CompanyID": "2002",
+    "CompanyName": "General Liquids Canada Ltd.",
+    "OtThreshold": "110",
+    "SequenceNo": "2,3",
+    "ForemanID": "9082658",
+    "DELETED": false
+}
+
+###
+POST http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+        "Date": "2024-01-03",
+        "EmployeeID": "9083554",
+        "EmployeeName": "Wallace Currie",
+        "CompanyID": "2006",
+        "Activity": "",
+        "ReceivingUnitTruck": "",
+        "SendingUnitTrailer": "",
+        "JobDescription": "",
+        "SectionDescription": "",
+        "PhaseDescription": "",
+        "CostCenter": "2000007006",
+        "WorkOrder": "",
+        "WorkorderDescription": "",
+        "Position": "Truck Driver",
+        "PositionManagerName": "James Test",
+        "PositionManagerEmail": "jmyshrall@dexter.ca",
+        "ProjectManagerName": "",
+        "ProjectManagerEmail": "",
+        "PersonnelSubArea": "23002345",
+        "PayCode": "",
+        "TotalHours": "10.00",
+        "Comments": "",
+        "SaveSubmitStatus": "Saved",
+        "PayPeriodBeginDate": "2023-12-31",
+        "PayPeriodEndDate": "2024-12-13",
+        "ManagerApprovalEmail": "jmyshrall@dexter.ca",
+        "OtThreshold": "110",
+        "SequenceNo": "2",
+        "AppName": "ESG",
+        "Job": "",
+        "Section": "",
+        "Phase": ""
+      }
+
+###
+GET http://localhost:4004/v2/mgcdb-srv/RTOTCalulation?EmployeeID='9080036'&AppName=''&PayPeriodBeginDate='2024-01-28'&PayPeriodEndDate='2024-02-10'&OtFrequency='Biweekly'&Date=''
+Accept: application/json
+
+###
+GET http://localhost:4004/v2/mgcdb-srv/RTOTCalulation?EmployeeID='9080036'&PayPeriodBeginDate='2024-12-31'&PayPeriodEndDate='2024-01-28'&OtFrequency='Biweekly'&Date='2024-02-10'
+Accept: application/json
+
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='CP_CREW',ID=cb35c9ea-4cd0-48c2-9c1b-c7aeca5d7ee7,Date='2024-01-17')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+    "ID": "cb35c9ea-4cd0-48c2-9c1b-c7aeca5d7ee7",
+    "AppName": "CP_CREW",
+    "Date": "2024-01-17",
+    "EmployeeID": "9082627",
+    "EmployeeName": "Adam Brien",
+    "EquipmentID": "",
+    "EquipmentDescription": "",
+    "Job": "",
+    "JobDescription": "",
+    "Section": "",
+    "SectionDescription": "",
+    "Phase": "",
+    "PhaseDescription": "",
+    "WorkOrder": "100000041-0010",
+    "WorkorderDescription": "100000041-Replace windshield ",
+    "CostCenter": "",
+    "PayCode": "",
+    "InTime": null,
+    "OutTime": null,
+    "ActualInOutHrs": null,
+    "Qty": "",
+    "UOM": "",
+    "Position": null,
+    "PositionManagerName": "",
+    "PositionManagerEmail": "",
+    "ProjectManagerName": "",
+    "ProjectManagerEmail": "",
+    "SaveSubmitStatus": "Saved",
+    "ManagerApprovalStatus": null,
+    "PayrollApprovalStatus": null,
+    "Activity": "",
+    "ReceivingUnitTruck": "",
+    "SendingUnitTrailer": "",
+    "TotalHours": "02.00",
+    "PreviousHours": null,
+    "Comments": "",
+    "ApproverComments": null,
+    "PayrollComments": null,
+    "SalariedEmployee": null,
+    "PersonnelSubArea": "23002380",
+    "LocationCode": "4103",
+    "ProfitCenter": "",
+    "MgrApprovalDate": null,
+    "MgrApprovalTime": null,
+    "PayrollApprDate": null,
+    "PayrollApprTime": null,
+    "PayPeriodBeginDate": "2024-01-14",
+    "PayPeriodEndDate": "2024-01-27",
+    "PayCheckIssueDate": null,
+    "ManagerApprovalName": "",
+    "ManagerApprovalEmail": "jon.christie@dexter.ca",
+    "PayrollApprovalName": null,
+    "PayrollApprovalEmail": null,
+    "RegularTime": null,
+    "OverTime": null,
+    "CompanyName": "NRB Construction Company Limited",
+    "CompanyID": "2006",
+    "OtThreshold": "110",
+    "UpdateIndicator": null,
+    "SequenceNo": "2,2",
+    "PlannedStartTime": null,
+    "TotalHoursPercentage": "2",
+    "ForemanID": "9082658",
+    "ProjectcoordinatorEmail": null,
+    "PayPeriodDescription": "",
+    "OtFrequency": "Biweekly"
+}
+
+###
+PUT http://localhost:4004/v2/mgcdb-srv/TimeSheetDetails(AppName='CP_CREW',ID=3f6dcbbd-5a52-403b-b9ef-0c63fa2e6460,Date='2024-01-14')
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vZGV2LW11bmljaXBhbGdyb3VwLWU3ZHppcnZ3LmF1dGhlbnRpY2F0aW9uLmNhMTAuaGFuYS5vbmRlbWFuZC5jb20vdG9rZW5fa2V5cyIsImtpZCI6ImRlZmF1bHQtand0LWtleS0tNjMyMDcyNjAiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazJObUM0dXVoejJGMys1cE9zTzRpeU9WNDB0ZnpWK1JPeit5WjBZejVYWT0ifQ.eyJqdGkiOiI0ZmJiOTZjNTUxOWQ0ZTk0ODdmZTY5NjlmYTY5MTkxNyIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiODRkOTA0OC04MGZhLTQ0ZDMtOTlmNi0yMWYwNjhiNzA1YWEiLCJ6ZG4iOiJkZXYtbXVuaWNpcGFsZ3JvdXAtZTdkemlydncifSwic3ViIjoic2ItbWdjbW9kZWwhdDUxOCIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoic2ItbWdjbW9kZWwhdDUxOCIsImNpZCI6InNiLW1nY21vZGVsIXQ1MTgiLCJhenAiOiJzYi1tZ2Ntb2RlbCF0NTE4IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiI2MDdiNmVlOCIsImlhdCI6MTcwNDE2NjM2NywiZXhwIjoxNzA0MTY5OTY3LCJpc3MiOiJodHRwczovL2Rldi1tdW5pY2lwYWxncm91cC1lN2R6aXJ2dy5hdXRoZW50aWNhdGlvbi5jYTEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjg0ZDkwNDgtODBmYS00NGQzLTk5ZjYtMjFmMDY4YjcwNWFhIiwiYXVkIjpbInVhYSIsInNiLW1nY21vZGVsIXQ1MTgiXX0.T2iH-1snnI0p7CIvu4Pi4ULi9D2_Ax7SjaSuV_mv8gefVddW7qqJ1kvprxUVpcmhDSP90qHQxBHTxXWuTMs3RcXAKeBed30Zx1twakDF5Ab6MDouRpMX-EIEivhYVG8lEikPxBFGpjnrOLD0D6JHB2hmZXTY_ENGEIcE6JYPuEK_S_OgYi0DWZ0LIuOzEz-RlDqwUvgmbyom2joCpOPi1sLRKTOhRewbrxKe0WyAGWNgXFHp0xKc28i5-lgsA9hCFCF3AE1D-n7yhFdLhewG3UexeWZlUm5FG01w7MEJYh0l-TKTRvNJTfmKUlbYmji8okHcZTYxkati9xntEnM9Yg
+
+{
+        "ID": "3f6dcbbd-5a52-403b-b9ef-0c63fa2e6460",
+        "EquipmentID": "",
+        "EquipmentDescription": "",
+        "EmployeeID": "9084437",
+        "EmployeeName": "Ahmed Gadalla",
+        "LocationCode": "4054",
+        "Date": "2024-01-14",
+        "PayCode": "",
+        "PayPeriodDescription": "",
+        "Job": "1.2220069091",
+        "JobDescription": "2220069091-Test for billing issue",
+        "ProfitCenter": "3500200",
+        "Section": "1.2220069091.01",
+        "SectionDescription": "01-Section 1 - Mass and Underground",
+        "Phase": "1.2220069091.01.3100",
+        "PhaseDescription": "3100-Pipe - Water System",
+        "Qty": "",
+        "UOM": "",
+        "WorkOrder": "",
+        "WorkorderDescription": "",
+        "CostCenter": "",
+        "Activity": "",
+        "SendingUnitTrailer": "",
+        "ReceivingUnitTruck": "",
+        "Comments": "",
+        "TotalHours": "9",
+        "SaveSubmitStatus": "Saved",
+        "PayPeriodBeginDate": "2024-01-14",
+        "PayPeriodEndDate": "2024-01-27",
+        "PersonnelSubArea": "22002220",
+        "PositionManagerName": "",
+        "PositionManagerEmail": "",
+        "ProjectManagerName": "",
+        "ProjectManagerEmail": "",
+        "ManagerApprovalName": "",
+        "ManagerApprovalEmail": "",
+        "CompanyID": "2002",
+        "CompanyName": "General Liquids Canada Ltd.",
+        "OtThreshold": "110",
+        "SequenceNo": "4,8",
+        "ForemanID": "9080261",
+        "DELETED": false,
+        "OtFrequency": "Biweekly"
+}

@@ -1,0 +1,70 @@
+_schema-version: '3.1'
+ID: mgcmodel
+description: A simple CAP project.
+version: 1.0.0
+modules:
+  - name: mgcmodel-srv
+    type: nodejs
+    path: gen/srv
+    requires:
+      - name: mgcmodel-db
+      - name: uaa_mgcmodel
+    provides:
+      - name: mgcmodel-srv-url
+        properties:
+          mgcmodel-srv-url: '${default-url}'
+    parameters:
+      buildpack: nodejs_buildpack
+    build-parameters:
+      builder: npm
+  - name: mgcmodel-db-deployer
+    type: hdb
+    path: gen/db
+    requires:
+      - name: mgcmodel-db
+      - name: uaa_mgcmodel
+    parameters:
+      buildpack: nodejs_buildpack
+  - name: mgcmodel-approuter
+    type: approuter.nodejs
+    path: mgcmodel-approuter
+    requires:
+      - name: mgcmodel_html_repo_runtime
+      - name: uaa_mgcmodel
+      - name: mgcmodel-srv-url
+        group: destinations
+        properties:
+          forwardAuthToken: true
+          name: mgcmodel-srv-url
+          timeout: 600000
+          url: '~{mgcmodel-srv-url}'
+        parameters:
+          disk-quota: 256M
+          memory: 256M
+resources:
+  - name: mgcmodel-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+      config:
+        schema: mgc
+  - name: mgcmodel_html_repo_runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime
+  - name: uaa_mgcmodel
+    type: org.cloudfoundry.managed-service
+    parameters:
+      path: ./xs-security.json
+      service: xsuaa
+      service-name: mgcmodel-xsuaa-service
+      service-plan: application
+parameters:
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npx cds build --production
